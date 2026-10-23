@@ -9,6 +9,8 @@ import MengapaJatis from "@/components/MengapaJatis";
 import StudiKasus from "@/components/StudiKasus";
 import Pricing from "@/components/Pricing";
 import EdukasiArtikel from "@/components/EdukasiArtikel";
+import FAQ from "@/components/FAQ";
+import FinalCTA from "@/components/FinalCTA";
 
 export default function Home() {
   return (
@@ -25,6 +27,8 @@ export default function Home() {
         <StudiKasus />
         <Pricing />
         <EdukasiArtikel />
+        <FAQ />
+        <FinalCTA />
       </main>
     </>
   );
