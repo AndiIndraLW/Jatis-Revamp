@@ -1,0 +1,159 @@
+.trustSection {
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 24px 0 64px 0;
+  border-bottom: 1px solid rgba(43, 33, 112, 0.04);
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Left Column */
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  max-width: 440px;
+}
+
+.heading {
+  color: var(--color-indigo);
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.subheading {
+  color: var(--color-grey);
+  font-size: 13.5px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.certBadges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.certImage {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.certImage:hover {
+  transform: translateY(-2px);
+}
+
+/* Right Column: Verified Client Logo Cards */
+.clientLogosGrid {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.clientCard {
+  flex: 1;
+  min-width: 100px;
+  max-width: 126px;
+  height: 72px;
+  border: 1px dashed rgba(43, 33, 112, 0.25);
+  border-radius: 6px;
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.clientCard:hover {
+  border-color: var(--color-indigo);
+  background-color: var(--color-light-indigo);
+  transform: translateY(-2px);
+}
+
+.clientPlaceholderText {
+  color: #7b759f;
+  font-size: 11px;
+  line-height: 1.3;
+  font-weight: 400;
+  user-select: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .clientLogosGrid {
+    gap: 8px;
+  }
+  .clientCard {
+    height: 66px;
+    padding: 6px;
+  }
+  .clientPlaceholderText {
+    font-size: 10.5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .leftContent {
+    max-width: 100%;
+  }
+
+  .clientLogosGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .clientCard {
+    max-width: none;
+    height: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .trustSection {
+    padding: 16px 0 48px 0;
+  }
+
+  .heading {
+    font-size: 18px;
+  }
+
+  .subheading {
+    font-size: 13px;
+  }
+
+  .clientLogosGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .clientCard {
+    height: 64px;
+  }
+}
