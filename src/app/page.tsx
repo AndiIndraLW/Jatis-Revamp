@@ -3,6 +3,9 @@ import Hero from "@/components/Hero";
 import TrustStrip from "@/components/TrustStrip";
 import ValueOverview from "@/components/ValueOverview";
 import FiturUtama from "@/components/FiturUtama";
+import UseCases from "@/components/UseCases";
+import CaraKerja from "@/components/CaraKerja";
+import MengapaJatis from "@/components/MengapaJatis";
 
 export default function Home() {
   return (
@@ -13,6 +16,9 @@ export default function Home() {
         <TrustStrip />
         <ValueOverview />
         <FiturUtama />
+        <UseCases />
+        <CaraKerja />
+        <MengapaJatis />
       </main>
     </>
   );
