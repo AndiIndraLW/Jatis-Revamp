@@ -1,13 +1,22 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Brand Color Guide */
+  --color-indigo: #2b2170;
+  --color-white: #ffffff;
+  --color-orange: #ff6c22;
+  --color-grey: #6e6e6e;
+  --color-dark-grey: #333333;
+  --color-light-indigo: #f3f1f9;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Semantic Tokens */
+  --primary: var(--color-indigo);
+  --primary-light: var(--color-light-indigo);
+  --accent: var(--color-orange);
+  --text-main: var(--color-dark-grey);
+  --text-muted: var(--color-grey);
+  --surface: var(--color-light-indigo);
+
+  --background: var(--color-white);
+  --foreground: var(--color-dark-grey);
 }
 
 html {
@@ -47,3 +56,23 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Color Guide Utility Classes */
+.text-indigo { color: var(--color-indigo); }
+.text-white { color: var(--color-white); }
+.text-orange { color: var(--color-orange); }
+.text-grey { color: var(--color-grey); }
+.text-dark-grey { color: var(--color-dark-grey); }
+.text-light-indigo { color: var(--color-light-indigo); }
+
+.bg-indigo { background-color: var(--color-indigo); }
+.bg-white { background-color: var(--color-white); }
+.bg-orange { background-color: var(--color-orange); }
+.bg-grey { background-color: var(--color-grey); }
+.bg-dark-grey { background-color: var(--color-dark-grey); }
+.bg-light-indigo { background-color: var(--color-light-indigo); }
+
+.border-indigo { border-color: var(--color-indigo); }
+.border-orange { border-color: var(--color-orange); }
+.border-grey { border-color: var(--color-grey); }
+.border-light-indigo { border-color: var(--color-light-indigo); }
