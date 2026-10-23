@@ -6,6 +6,9 @@ import FiturUtama from "@/components/FiturUtama";
 import UseCases from "@/components/UseCases";
 import CaraKerja from "@/components/CaraKerja";
 import MengapaJatis from "@/components/MengapaJatis";
+import StudiKasus from "@/components/StudiKasus";
+import Pricing from "@/components/Pricing";
+import EdukasiArtikel from "@/components/EdukasiArtikel";
 
 export default function Home() {
   return (
@@ -19,6 +22,9 @@ export default function Home() {
         <UseCases />
         <CaraKerja />
         <MengapaJatis />
+        <StudiKasus />
+        <Pricing />
+        <EdukasiArtikel />
       </main>
     </>
   );
